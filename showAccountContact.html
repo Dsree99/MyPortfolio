@@ -1,0 +1,13 @@
+<template>
+<lightning-card  variant="Narrow"  title={title} >
+
+    <template for:each={contacts} for:item="contact">
+    <lightning-layout key = {contact.Id} class="slds:box">
+        <lightning-layout-item size="12" padding="around-small"  >
+             <b class="slds-p-horizontal_small">{contact.Name} </b>
+        </lightning-layout-item>
+       
+    </lightning-layout>
+    </template>
+    </lightning-card>
+</template>
