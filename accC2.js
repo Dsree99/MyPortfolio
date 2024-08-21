@@ -46,9 +46,9 @@ export default class AccC2 extends LightningElement {
             const payload = {
                 accountId:event.detail.row.Id,
                 accountName:event.detail.row.Name
-            }
+            };
 
-            publish(this.messageContext,message , payload)
+            publish(this.messageContext,message , payload);
 
 
         }
